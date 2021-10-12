@@ -63,7 +63,9 @@ class BarcodeReader {
         // ----------------------------------------
         // Constructor
 
-        BarcodeReader() {};
+        BarcodeReader() {
+            Serial2.begin(9600);
+        };
 
         // ----------------------------------------
         // initializeBarcodeReader()
